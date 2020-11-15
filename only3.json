@@ -1,0 +1,29 @@
+[
+  {
+    "id": 3,
+    "title": "Alert",
+    "author": {
+      "id": 3,
+      "firstname": "Rossen",
+      "lastname": "Stoyanchev",
+      "email": "rstoyanchev@pivotal.io",
+      "address": "3 Warren street",
+      "postalCode": "10011",
+      "city": "New York",
+      "country": "USA"
+    },
+    "recipients": [
+      {
+        "id": 1,
+        "firstname": "Brian",
+        "lastname": "Clozel",
+        "email": "bclozel@pivotal.io",
+        "address": "1 Jaures street",
+        "postalCode": "69003",
+        "city": "Lyon",
+        "country": "France"
+      }
+    ],
+    "body": "This is an alert message"
+  }
+]
