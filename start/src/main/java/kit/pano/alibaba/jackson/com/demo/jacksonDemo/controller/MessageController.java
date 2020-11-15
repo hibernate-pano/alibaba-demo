@@ -14,20 +14,19 @@
  * limitations under the License.
  */
 
-package kit.pano.alibaba.com.demo.jacksonDemo.controller;
+package kit.pano.alibaba.jackson.com.demo.jacksonDemo.controller;
 
-import java.util.List;
-
-import kit.pano.alibaba.com.demo.jacksonDemo.data.Message;
-import kit.pano.alibaba.com.demo.jacksonDemo.view.View;
 import com.fasterxml.jackson.annotation.JsonView;
-
-import kit.pano.alibaba.com.demo.jacksonDemo.service.MessageService;
+import kit.pano.alibaba.com.demo.jacksonDemo.view.View;
+import kit.pano.alibaba.jackson.com.demo.jacksonDemo.data.Message;
+import kit.pano.alibaba.jackson.com.demo.jacksonDemo.service.MessageService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
+
+import java.util.List;
 
 @RestController
 public class MessageController {
@@ -52,7 +51,7 @@ public class MessageController {
 
     @RequestMapping("/{id}")
     public Message getMessage(@PathVariable Long id) {
-		return this.messageService.get(id);
+        return this.messageService.get(id);
     }
 
 

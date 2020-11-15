@@ -13,17 +13,18 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package kit.pano.alibaba.com.demo.jacksonDemo.data;
+package kit.pano.alibaba.jackson.com.demo.jacksonDemo.data;
+
+import com.fasterxml.jackson.annotation.JsonView;
+import kit.pano.alibaba.com.demo.jacksonDemo.view.View;
 
 import java.util.Arrays;
 import java.util.List;
 
-import kit.pano.alibaba.com.demo.jacksonDemo.view.View;
-import com.fasterxml.jackson.annotation.JsonView;
-
 public class Message {
 
-    @JsonView(View.Summary.class)//这句话指定了id的视图类型是View.Summary.class。Controller的可以根据视图类来指定输出何种视图。View.Summary.class的定义在view文件夹里。
+    @JsonView(View.Summary.class)
+//这句话指定了id的视图类型是View.Summary.class。Controller的可以根据视图类来指定输出何种视图。View.Summary.class的定义在view文件夹里。
     private Long id;
 
     @JsonView(View.Summary.class)

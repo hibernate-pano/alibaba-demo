@@ -1,14 +1,13 @@
 package kit.pano.alibaba.web;
 
+import kit.pano.alibaba.api.UserService;
+import kit.pano.alibaba.api.model.UserModel;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
-
-import kit.pano.alibaba.api.UserService;
-import kit.pano.alibaba.api.model.UserModel;
 
 /**
  * @author <a href="mailto:chenxilzx1@gmail.com">theonefx</a>

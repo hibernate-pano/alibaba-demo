@@ -16,14 +16,13 @@
  */
 package kit.pano.alibaba.demos.mybatis.controller;
 
-import java.util.List;
-
+import kit.pano.alibaba.demos.mybatis.entity.MybatisDemoUser;
+import kit.pano.alibaba.demos.mybatis.mapper.MybatisDemoUserMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import kit.pano.alibaba.demos.mybatis.entity.MybatisDemoUser;
-import kit.pano.alibaba.demos.mybatis.mapper.MybatisDemoUserMapper;
+import java.util.List;
 
 @RestController
 @RequestMapping("/user")
@@ -34,7 +33,7 @@ public class MybatisDemoUserController {
 
     // http://127.0.0.1:8080/user/findAll
     @RequestMapping("/findAll")
-    public List<MybatisDemoUser> findAll(){
+    public List<MybatisDemoUser> findAll() {
         return mybatisDemoUserMapper.findAll();
     }
 

@@ -14,17 +14,11 @@
 
 package kit.pano.alibaba.demos.sentinel;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import com.alibaba.cloud.demo.sentinel.api.FooService;
+import org.apache.dubbo.config.annotation.DubboReference;
+import org.springframework.web.bind.annotation.*;
 
-import com.alibaba.csp.sentinel.demo.dubbo.FooService;
-import com.alibaba.csp.sentinel.demo.service.DemoService;
-import org.apache.dubbo.config.annotation.Reference;
-import org.apache.dubbo.config.spring.context.annotation.DubboComponentScan;
+import javax.annotation.Resource;
 
 /**
  * @author Eric Zhao
@@ -33,10 +27,10 @@ import org.apache.dubbo.config.spring.context.annotation.DubboComponentScan;
 @RequestMapping("/demo")
 public class DemoController {
 
-    @Reference
+    @DubboReference
     private FooService fooService;
 
-    @Autowired
+    @Resource
     private DemoService demoService;
 
     @GetMapping("/hello")

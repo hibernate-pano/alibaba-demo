@@ -13,12 +13,11 @@
  */
 package kit.pano.alibaba.demos.sentinel;
 
-import java.io.PrintWriter;
-
+import com.alibaba.csp.sentinel.adapter.spring.webmvc.callback.BlockExceptionHandler;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-import com.alibaba.csp.sentinel.adapter.spring.webmvc.callback.BlockExceptionHandler;
+import java.io.PrintWriter;
 
 /**
  * @author Eric Zhao

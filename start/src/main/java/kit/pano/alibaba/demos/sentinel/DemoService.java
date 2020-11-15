@@ -14,10 +14,9 @@
 
 package kit.pano.alibaba.demos.sentinel;
 
-import org.springframework.stereotype.Service;
-
 import com.alibaba.csp.sentinel.annotation.SentinelResource;
 import com.alibaba.csp.sentinel.slots.block.BlockException;
+import org.springframework.stereotype.Service;
 
 /**
  * @author Eric Zhao

@@ -15,12 +15,11 @@
  */
 package kit.pano.alibaba.demos.dubboconsumer;
 
+import com.alibaba.cloud.demo.dubbo.api.EchoService;
+import org.apache.dubbo.config.annotation.Reference;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
-
-import com.alibaba.cloud.demo.dubbo.api.EchoService;
-import org.apache.dubbo.config.annotation.Reference;
 
 @RestController
 public class DubboConsumerSampleController {
