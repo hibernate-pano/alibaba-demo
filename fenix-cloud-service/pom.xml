@@ -4,27 +4,31 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
         <groupId>kit.pano</groupId>
-        <artifactId>alibaba-demo</artifactId>
+        <artifactId>fenix-cloud</artifactId>
         <version>0.0.1-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>alibaba-demo-web</artifactId>
+    <artifactId>fenix-cloud-service</artifactId>
 
 
     <dependencies>
         <dependency>
             <groupId>kit.pano</groupId>
-            <artifactId>alibaba-demo-api</artifactId>
+            <artifactId>fenix-cloud-api</artifactId>
             <version>${project.version}</version>
         </dependency>
-
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
+            <groupId>kit.pano</groupId>
+            <artifactId>fenix-cloud-manager</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>kit.pano</groupId>
+            <artifactId>fenix-cloud-dao</artifactId>
+            <version>${project.version}</version>
         </dependency>
     </dependencies>
-
 
 </project>

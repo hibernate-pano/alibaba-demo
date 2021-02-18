@@ -14,12 +14,12 @@
 package kit.pano.alibaba.demos.sentinelprovider;
 
 import com.alibaba.cloud.demo.sentinel.api.FooService;
-import org.apache.dubbo.config.annotation.Service;
+import org.apache.dubbo.config.annotation.DubboService;
 
 /**
  * @author Eric Zhao
  */
-@Service
+@DubboService
 public class FooServiceImpl implements FooService {
 
     @Override

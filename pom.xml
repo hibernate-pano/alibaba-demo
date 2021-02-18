@@ -3,10 +3,10 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>kit.pano</groupId>
-    <artifactId>alibaba-demo</artifactId>
+    <artifactId>fenix-cloud</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
-    <name>alibaba-demo</name>
+    <name>fenix-cloud</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>
@@ -19,11 +19,11 @@
     </properties>
 
     <modules>
-        <module>alibaba-demo-api</module>
-        <module>alibaba-demo-dao</module>
-        <module>alibaba-demo-manager</module>
-        <module>alibaba-demo-service</module>
-        <module>alibaba-demo-web</module>
+        <module>fenix-cloud-api</module>
+        <module>fenix-cloud-dao</module>
+        <module>fenix-cloud-manager</module>
+        <module>fenix-cloud-service</module>
+        <module>fenix-cloud-web</module>
         <module>start</module>
     </modules>
 
