@@ -13,18 +13,17 @@
         <java.version>1.8</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <spring-boot.version>2.3.4.RELEASE</spring-boot.version>
-        <spring-cloud-alibaba.version>2.2.2.RELEASE</spring-cloud-alibaba.version>
+        <spring-boot.version>2.3.7.RELEASE</spring-boot.version>
+        <spring-cloud-alibaba.version>2.2.5.RELEASE</spring-cloud-alibaba.version>
         <spring-cloud.version>Hoxton.SR8</spring-cloud.version>
     </properties>
 
     <modules>
-        <module>fenix-cloud-api</module>
-        <module>fenix-cloud-dao</module>
-        <module>fenix-cloud-manager</module>
-        <module>fenix-cloud-service</module>
-        <module>fenix-cloud-web</module>
-        <module>start</module>
+        <module>fenix-gateway</module>
+        <module>fenix-common</module>
+        <module>fenix-log</module>
+        <module>fenix-cas</module>
+        <module>fenix-module</module>
     </modules>
 
     <dependencyManagement>
