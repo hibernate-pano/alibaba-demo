@@ -5,4 +5,7 @@ package kit.pano.common.core.exception;
  */
 public class FenixException extends RuntimeException {
 
+    public FenixException(String message) {
+        super(message);
+    }
 }
