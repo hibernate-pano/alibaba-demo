@@ -24,6 +24,7 @@
         <module>fenix-log</module>
         <module>fenix-auth</module>
         <module>fenix-module</module>
+        <module>fenix-monitor</module>
     </modules>
 
     <dependencyManagement>

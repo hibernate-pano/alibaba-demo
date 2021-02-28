@@ -17,6 +17,9 @@
         <module>fenix-datasource</module>
         <module>fenix-swagger</module>
         <module>fenix-core</module>
+        <module>fenix-mail</module>
+        <module>fenix-search</module>
+        <module>fenix-sms</module>
     </modules>
 
     <properties>
