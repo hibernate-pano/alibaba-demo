@@ -1,0 +1,15 @@
+package kit.pano.common.redis;
+
+/**
+ * Redis 连接异常
+ *
+ * @author Pano
+ */
+public class RedisConnectException extends Exception {
+
+    private static final long serialVersionUID = 1639374111871115063L;
+
+    public RedisConnectException(String message) {
+        super(message);
+    }
+}

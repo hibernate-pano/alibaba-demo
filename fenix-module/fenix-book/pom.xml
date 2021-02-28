@@ -3,19 +3,13 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>fenix-cloud</artifactId>
+        <artifactId>fenix-mudule</artifactId>
         <groupId>kit.pano</groupId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>fenix-mudule</artifactId>
-    <packaging>pom</packaging>
-    <modules>
-        <module>fenix-book</module>
-        <module>fenix-store</module>
-        <module>fenix-order</module>
-    </modules>
+    <artifactId>fenix-book</artifactId>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>

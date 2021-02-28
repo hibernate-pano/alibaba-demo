@@ -22,7 +22,7 @@
         <module>fenix-gateway</module>
         <module>fenix-common</module>
         <module>fenix-log</module>
-        <module>fenix-cas</module>
+        <module>fenix-auth</module>
         <module>fenix-module</module>
     </modules>
 
@@ -61,12 +61,7 @@
                 <version>2.1.3</version>
                 <type>jar</type>
             </dependency>
-            <dependency>
-                <groupId>commons-io</groupId>
-                <artifactId>commons-io</artifactId>
-                <version>2.6</version>
-                <type>jar</type>
-            </dependency>
+
         </dependencies>
     </dependencyManagement>
 

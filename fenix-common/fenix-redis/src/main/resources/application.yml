@@ -1,0 +1,22 @@
+spring:
+  redis:
+    host: 49.233.91.184
+    port: 6379
+    # 密码，在redis的配置文件中设置
+    password: REDIS_2020
+    # 当前版本默认Redis客户端程序为lettuce，而不是之前的Jedis，避免了多线程环境下的线程安全问题。
+    # 为了方便当前还是选用jedis
+    jedis:
+      pool:
+        # 连接池最大连接数（使用负值表示没有限制） 默认 8
+        max-active: 200
+        # 连接池最大阻塞等待时间（使用负值表示没有限制） 默认 -1
+        max-wait: -1
+        # 连接池中的最大空闲连接 默认 8
+        max-idle: 8
+        # 连接池中的最小空闲连接 默认 0
+        min-idle: 0
+    # Redis默认情况下有16个分片，这里配置具体使用的分片，默认是0
+    database: 0
+    # 连接超时时间（毫秒）
+    timeout: 10000
